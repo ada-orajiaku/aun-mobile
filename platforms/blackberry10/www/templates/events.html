@@ -1,0 +1,41 @@
+<ion-view title="Events">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left"class="button button-icon"><img src="img/icon.png" width="35px"/></button>
+  </ion-nav-buttons>
+
+  <div class="bar bar-subheader item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios7-search placeholder-icon"></i>
+    <input type="search" placeholder="Search Events">
+  </label>
+  <button class="button button-clear">
+    Cancel
+  </button>
+</div>
+  <ion-content class="has-subheader">
+
+	<div class="card" ng-show="error">
+  		<div class="item item-text-wrap item-assertive">
+    		You need Internet connection to load events. Please check your Internet connection and refresh.
+  		</div>
+	</div>
+	<div class="list">
+		<span ng-repeat="event in events">
+			<a  class="item item-thumbnail-left" href="#/aun/event/{{event.itemid}}" >
+				<img src="http://qt.234.com.ng/aunapp/admin_controller/generalItem/EventImages/{{event.imageid}}.jpg" />
+      			<h2>{{event.title}}</h2>
+      			<p ng-bind-html="event.details"></p>
+    		</a>
+		</span>
+	</div>
+
+  </ion-content>
+
+  <div class="tabs tabs-icon-top">
+  <a class="tab-item" ng-click="fetchEvents();">
+    <i class="icon ion-refresh"></i>
+    Refresh
+  </a>
+</div>
+
+</ion-view>

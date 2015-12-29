@@ -1,0 +1,66 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+    <ion-nav-back-button class="button-clear"><i class="icon ion-chevron-left"></i> Back</ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left">
+    <header class="bar bar-header bar-calm"><a href="#/aun/">
+    	<img src="img/icon.png" width="35px"/>
+       <h1 class="title">AUN</h1>
+      </a>
+    </header>
+    <ion-content class="has-header">
+      <ion-list>
+        <ion-item nav-clear menu-close href="#/aun/news">
+          News
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/events">
+          Events
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/contacts">
+          Directory
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/parents">
+          Parents / Family
+        </ion-item>
+        <ion-item nav-clear menu-close href="#" onclick="window.open('http://openerp.aun.edu.ng/','_blank','location=yes','closebuttoncaption=Return');">
+          Admissions
+        </ion-item>
+        <ion-item nav-clear menu-close href="#" onclick="window.open('http://moodle.aun.edu.ng/','_blank','location=yes','closebuttoncaption=Return');">
+          Courses
+        </ion-item>
+        <ion-item nav-clear menu-close href="#" onclick="window.open('http://library.aun.edu.ng/','_blank','location=yes','closebuttoncaption=Return');">
+          Library
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/places">
+          Places / Campus Tour
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/map">
+          Map
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/shuttle">
+          Shuttle
+        </ion-item>
+		<ion-item nav-clear menu-close href="#/aun/info">
+          Info
+        </ion-item>
+        <ion-item nav-clear menu-close href="#">
+          Chat
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/emergency">
+          Emergency Contacts
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/settings">
+          Settings
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/aun/resources">
+          Resources
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

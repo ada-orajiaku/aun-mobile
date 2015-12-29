@@ -1,0 +1,31 @@
+   <ion-view title="Places" back-img="img/bg-10.jpg">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left"class="button button-icon"><img src="img/icon.png" width="35px"/></button>
+  </ion-nav-buttons>
+    <ion-pane ng-controller="CardsCtrl" no-scroll >
+	<div class="card" ng-show="offline">
+  		<div class="item item-text-wrap item-assertive">
+    		You need Internet connection to view maps. Please check your Internet connection and refresh.
+  		</div>
+	</div>
+      <swipe-cards>
+        <swipe-card on-card-swipe="cardSwiped()" id="start-card">
+          Swipe down to start the tour.
+        </swipe-card>
+        <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-card-swipe="cardSwiped($index)">
+          <div ng-controller="CardCtrl">
+            <div class="title">
+              {{card.title}}
+            </div>
+            <div class="image">
+              <img ng-src="{{card.image}}">
+            </div>
+            <div class="button-bar">
+              	<button class="button button-clear button-positive" ng-click="goAway()">Prev</button>
+              	<button class="button button-clear button-positive" ng-click="goAway()">Next</button>
+            </div>
+          </div>
+        </swipe-card>
+      </swipe-cards>
+    </ion-pane>
+</ion-view>

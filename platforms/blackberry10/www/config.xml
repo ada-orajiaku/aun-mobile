@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ng.qwesttribe.aun" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <feature name="Device" value="Device" />
+    <feature name="SplashScreen" value="SplashScreen" />
+    <feature name="Vibration" value="Vibration" />
+    <feature name="Notification" value="Notification" />
+    <feature name="Accelerometer" value="Accelerometer" />
+    <feature name="Geolocation" value="Geolocation" />
+    <feature name="com.blackberry.utils" />
+    <feature name="com.blackberry.pim.lib" />
+    <feature name="Contacts" value="Contacts" />
+    <rim:permissions>
+        <rim:permit>read_device_identifying_information</rim:permit>
+        <rim:permit>read_geolocation</rim:permit>
+        <rim:permit>access_pimdomain_contacts</rim:permit>
+    </rim:permissions>
+    <name>AUN</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="http://qt.234.com.ng/aunapp/" />
+    <access origin="*" />
+</widget>

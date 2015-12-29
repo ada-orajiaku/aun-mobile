@@ -1,0 +1,24 @@
+<ion-view title="News">
+
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left"class="button button-icon"><img src="img/icon.png" width="35px"/></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-header padding">
+  	<h4><i>{{news.title}}</i></h4><br>
+	<p ng-bind-html="news.details"></p>
+  </ion-content>
+
+</ion-view>
+
+<div class="tabs tabs-icon-top">
+  <a class="tab-item">
+    <i class="icon ion-bookmark"></i>
+    Bookmark
+  </a>
+  <a class="tab-item">
+    <i class="icon ion-android-share"></i>
+    Share
+  </a>
+
+</div>

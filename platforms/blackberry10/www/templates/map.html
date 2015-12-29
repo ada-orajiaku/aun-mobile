@@ -1,0 +1,17 @@
+
+
+<ion-view title="Map">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left"class="button button-icon"><img src="img/icon.png" width="35px"/></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+	<br>
+     <div ng-controller="MapCtrl" id="map-screen" >
+		<map zoom="17" center="[9.1912273,12.4997017]">
+      		<p>You need Internet Connection to view maps.</p>
+        	<marker ng-repeat="p in positions" position="{{p}}" title="{{p.toString()}}"></marker>
+      	</map>
+    </div>
+
+  </ion-content>
+</ion-view>

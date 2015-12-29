@@ -1,0 +1,37 @@
+<ion-view title="Event">
+  <ion-nav-buttons side="left">
+     <button menu-toggle="left"class="button button-icon"><img src="img/icon.png" width="35px"/></button>
+  </ion-nav-buttons>
+
+
+  <ion-content class="has-header padding" >
+
+	<div class="list card">
+
+  <div class="item item-avatar">
+    <h2>{{event.title}}</h2>
+  </div>
+
+  <div class="item item-body" >
+    <img class="full-image" style="width:100%;" src="http://qt.234.com.ng/aunapp/admin_controller/generalItem/EventImages/{{event.imageid}}.jpg" /><br>
+	<p ng-bind-html="event.details"></p>
+
+  </div>
+    <div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item">
+      <i class="icon ion-clock"></i>
+     {{event.start_date}} {{event.start_time}}
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-ios7-time"></i>
+      {{event.end_date}} {{event.end_time}}
+    </a>
+    <a class="tab-item">
+      <i class="icon ion-android-location"></i>
+      {{event.venue}}
+    </a>
+  </div>
+
+  </div>
+  </ion-content>
+</ion-view>

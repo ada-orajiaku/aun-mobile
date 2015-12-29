@@ -1,0 +1,186 @@
+
+
+/*
+ * override the default CSS as an example
+ */
+
+#loading-bar .bar {
+  background: #2c3e50;
+}
+#loading-bar-spinner .spinner-icon {
+  border-top-color:  #2c3e50;
+  border-left-color: #2c3e50;
+}
+#loading-bar .peg {
+  -moz-box-shadow: #2c3e50 1px 0 6px 1px;
+  -ms-box-shadow: #2c3e50 1px 0 6px 1px;
+  -webkit-box-shadow: #2c3e50 1px 0 6px 1px;
+  box-shadow: #2c3e50 1px 0 6px 1px;
+}
+#map-screen {margin-left:5%;}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+/* Styles */
+	#loading-bar .bar { margin-top:10%; }
+	#loading-bar-spinner .spinner-icon { margin-top:707%; }
+	#map-screen {width:400px; height:300px;}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* Styles */
+	#map-screen {width:360px; height:300px;}
+	#loading-bar .bar { margin-top:10%; }
+	#loading-bar-spinner .spinner-icon { margin-top:300%; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 380px) {
+/* Styles */
+	#map-screen {width:300px; height:300px;}
+	#loading-bar .bar { margin-top:10%; }
+	#loading-bar-spinner .spinner-icon { margin-top:300%; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 460px) {
+/* Styles */
+	#map-screen {width:430px; height:400px;}
+	#loading-bar .bar { margin-top:9.5%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 530px) {
+/* Styles */
+	#map-screen {width:590px; height:400px;}
+		#loading-bar .bar { margin-top:9.5%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 630px) {
+/* Styles */
+	#map-screen {width:570px; height:400px;}
+		#loading-bar .bar { margin-top:6.9%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+/* Styles */
+	#map-screen {width:700px; height:700px;}
+		#loading-bar .bar { margin-top:5.7%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1022px) {
+/* Styles */
+	#map-screen {width:940px; height:700px;}
+	#loading-bar .bar { margin-top:4.1%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+	#map-screen {width:1200px; height:800px;}
+	#loading-bar .bar { margin-top:3.2%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1360px) {
+/* Styles */
+	#map-screen {width:1280px; height:900px;}
+		#loading-bar .bar { margin-top:2.9%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1660px) {
+/* Styles */
+	#map-screen {width:1500px; height:1000px;}
+		#loading-bar .bar { margin-top:2.5%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+	#map-screen {width:1800px; height:1000px;}
+		#loading-bar .bar { margin-top:2.4%; }
+	#loading-bar-spinner .spinner-icon { margin-top:400%; }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+	#map-screen {width:700px; height:800px;}
+}
+
+
+
+/* Styles go here */
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+
+.details {
+    padding: 0px 12px 20px 12px;
+}
+
+.details img {
+    float: left;
+    margin-right: 12px;
+}
+
+.list {
+    clear: both;
+}
+
+.big{
+	font-size:40px;
+}
+
